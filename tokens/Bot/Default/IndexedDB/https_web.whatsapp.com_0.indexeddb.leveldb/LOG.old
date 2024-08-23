@@ -1,0 +1,20 @@
+2024/08/23-09:40:18.549 2200 Reusing MANIFEST C:\Users\realg\Desktop\BOT\tokens\Bot\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/08/23-09:40:18.549 2200 Recovering log #253
+2024/08/23-09:40:18.552 2200 Reusing old log C:\Users\realg\Desktop\BOT\tokens\Bot\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000253.log 
+2024/08/23-09:40:18.552 2200 Delete type=2 #249
+2024/08/23-09:40:20.472 2c24 Level-0 table #258: started
+2024/08/23-09:40:20.475 2c08 Current memtable full; waiting...
+2024/08/23-09:40:20.477 2c24 Level-0 table #258: 53316 bytes OK
+2024/08/23-09:40:20.479 2c24 Delete type=0 #253
+2024/08/23-09:40:20.480 40d0 Level-0 table #260: started
+2024/08/23-09:40:20.482 40d0 Level-0 table #260: 431 bytes OK
+2024/08/23-09:40:20.484 40d0 Delete type=0 #257
+2024/08/23-09:40:20.484 40d0 Manual compaction at level-0 from '\x00j\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00k\x00\x00\x00' @ 0 : 0; will stop at '\x00k\x00\x00\x05' @ 1047885 : 0
+2024/08/23-09:40:20.484 40d0 Compacting 2@0 + 1@1 files
+2024/08/23-09:40:20.633 40d0 Generated table #261@0: 108596 keys, 2046261 bytes
+2024/08/23-09:40:20.633 40d0 Compacted 2@0 + 1@1 files => 2046261 bytes
+2024/08/23-09:40:20.634 40d0 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/08/23-09:40:20.634 40d0 Delete type=2 #258
+2024/08/23-09:40:20.634 40d0 Delete type=2 #260
+2024/08/23-09:40:20.635 4ee8 Manual compaction at level-0 from '\x00k\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00l\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/08/23-09:40:20.635 4ee8 Manual compaction at level-0 from '\x00k\x00\x00\x05' @ 1047885 : 0 .. '\x00k\x00\x00\x00' @ 0 : 0; will stop at (end)

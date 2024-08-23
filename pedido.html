@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Facili Delivery</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .nota { width: 300px; border: 1px solid #000; padding: 10px; margin: 0 auto; }
+        .header { text-align: center; margin-bottom: 20px; }
+        .header h1 { margin: 0; }
+        .content { margin-bottom: 20px; }
+        .content p { margin: 5px 0; }
+        .items table { width: 100%; border-collapse: collapse; }
+        .items table, .items th, .items td { border: 1px solid #000; }
+        .items th, .items td { padding: 5px; text-align: left; }
+        .payment { margin-top: 20px; }
+        .payment-options { margin-bottom: 10px; }
+    </style>
+    <script>
+        function printDocument() {
+            window.print();
+            setTimeout(function() {
+                window.close(); // Close the window after printing
+            }, 1000); // Wait a second to ensure the print dialog has opened
+        }
+        window.onload = printDocument;
+    </script>
+</head>
+<body>
+    <div class="nota">
+        <div class="header">
+            <h1>Facili Delivery</h1>
+        </div>
+        <div class="content">
+            <p><strong>Nome:</strong> não informado</p>
+            <p><strong>Endereco:</strong> não informado</p>
+            <p><strong>Pagamento:</strong> não informado</p>
+            <p><strong>Data e Hora:</strong> <span id="datetime"></span></p>
+        </div>
+        <div class="items">
+            <table>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantidade</th>
+                </tr>
+                <tr>
+                    <td>Bom trabalho</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div class="payment">
+            <div class="payment-options">
+                <p><strong>Forma de Pagamento:</strong> não informado</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function updateDateTime() {
+            const now = new Date();
+            const options = { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit', timeZone: 'America/Sao_Paulo' };
+            const formattedDate = new Intl.DateTimeFormat('pt-BR', options).format(now);
+            document.getElementById('datetime').innerText = formattedDate;
+        }
+        updateDateTime();
+    </script>
+</body>
+</html>
